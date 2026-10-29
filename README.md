@@ -1,4 +1,4 @@
-# rlcode —— 上饶麻将强化学习（Suphx 特征 + PPO2）
+# mahjong-rl-trainer —— 上饶麻将强化学习（Suphx 特征 + PPO2）
 
 > 江西上饶麻将规则的强化学习智能体。Suphx 式牌面特征编码 + stable-baselines PPO2 + 自定义 ResNet 策略网络，
 > 用「智一」专家模型做对手与示范。工程内部名为 `shangrao_mj_rl_v4_suphx_cppy`。
@@ -114,7 +114,7 @@ operate_shangrao_url  = "http://172.81.238.92:8082/shangraoMJ/v6/operate"
 ## 目录结构
 
 ```
-rlcode/
+mahjong-rl-trainer/
 ├── mahEnv.py                 # gym.Env 封装：动作空间 34、Suphx 特征 + mask
 ├── mah_state.py              # RL_state：单座位视野快照
 ├── mahjong.py                # 规则/对局核心（Game2 → Mcts_game → Game_RL → MahjongEnv），约 42 KB
